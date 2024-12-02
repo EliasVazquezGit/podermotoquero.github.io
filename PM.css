@@ -1,0 +1,507 @@
+body{
+    background: linear-gradient(90deg, cyan,blue 65%,darkblue);
+    margin: 0;
+}
+#titulo{
+    background: linear-gradient(90deg, rgb(0, 0, 39),blue);
+    margin: 0;
+    width: 100%;
+    font-size: 25px;
+    color: white;
+    text-shadow: -3px -3px red;
+}
+h1{
+    margin: 0;
+    padding: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#menu{
+    background-color: blue;
+    margin: 0;
+    color: white;
+    /* border: 3px red solid; */
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+h2{
+    display: inline-block;
+    font-size: 35px;
+    /* border: 3px red solid; */
+    margin: 0;
+}
+#menu h2{
+    margin-left: 85px;
+}
+#menu h2:hover{
+    background-color: rgb(92, 92, 255);
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.pb{
+    font-size: 35px;
+    /**/
+    text-align: center;
+    left: -300px;
+    bottom: -175px;
+}
+
+/* buscador 2 */
+
+.content-b1{
+    position: relative;
+    left: -300px;
+    top: 150px;
+}
+
+#buscador{
+    /**/
+    top: 180px;
+    right: 300px;
+    background-color: rgb(33, 30, 70);
+    color: gray;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 460px;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50px;
+}
+#buscador input{
+    text-decoration: none;
+    background: none;
+    color: white;
+    border-style: none;
+    border: none;
+    outline: none;
+    width: 300px;
+    font-size: 20px;
+}
+/* quita la X del input */
+.buscadores-x input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+.caja{
+    width: auto;
+    height: 300px;
+    border: 3px red solid;
+    background-image: url(img/pexels-photo-2011824.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+}
+#content{
+    margin-top: 480px;
+    height: 4470px;
+    /* bottom: 0; */
+    /* box-sizing: border-box; */
+    /* background-color: rgb(33, 30, 70); */
+    background-color: #231f32;
+}
+*{
+    margin: 0;
+}
+
+/* menu desplegable */
+
+.sub{
+    display: none;
+    position: absolute;
+    z-index: 10;
+}
+#menu h2 .sub a{
+    /* border: 3px red solid; */
+    background-color: blue;
+    display: block;
+    width: 150px;
+    text-align: center;
+    padding: 4px;
+}
+#menu h2 .sub a:last-child{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#menu h2 .sub a:hover{
+    background-color: rgb(92, 92, 255);
+}
+#menu h2:hover > .sub{
+    display: block;
+}
+
+/* buscador 2 */
+
+#buscador-2{
+    width: 55%;
+    height: 400px;
+    margin: auto;
+    position: fixed;
+    left: 22%;
+    top: 15%;
+    z-index: 12;
+    box-shadow: 22px -22px 0px #383250;
+    background-color: #231f32;
+    border-radius: 30px;
+    /* display: none; */
+}
+#buscador-2 button{
+    font-size: 20px;
+    text-decoration: none;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+    /**/
+    float: right;
+    right: -13.5px;
+    top: -13.5px;
+}
+.scroll-box {
+    /**/
+    left: 10px;
+    top: 35px;
+    margin: auto;
+    width: 80%; /* Ancho del contenedor */
+    height: 300px; /* Altura del contenedor */
+    border: 1px solid #ccc; /* Borde para visualizar mejor el contenedor */
+    background-color: wheat;
+    padding: 10px; /* Espacio interno del contenedor */
+    overflow-y: scroll; /* Agrega una barra de desplazamiento vertical */
+    overflow-x: hidden; /* Oculta la barra de desplazamiento horizontal */
+}
+.scroll-box p {
+    margin: 0;
+    padding: 5px 0;
+}
+.buscador-02{
+    /**/
+    background-color: #737373;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 50%;
+    margin: auto;
+    top: 15px;
+    padding: 10px;
+    border-radius: 50px;
+}
+.buscador-02 input{
+    /**/
+    left: 20%;
+    outline: none;
+    text-decoration: none;
+    background: none;
+    color: white;
+    border-style: none;
+    border: none;
+    width: 300px;
+    font-size: 15px;
+}
+
+.buscador-2::placeholder{
+    color: rgb(182, 182, 182);
+}
+
+/* Cajas */
+
+.img{
+    position: relative;
+    width: 430px;
+    top: 8%;
+    left: 2%;
+    border-radius: 30px;
+}
+
+.img-2{
+    /**/
+    top: 13px;
+    width: 390px;
+}
+
+.puntuacion{
+    position: relative;
+    top: 30%;
+    right: 15%;
+    float: right;
+    /* border: 3px blue solid; */
+    width: 500px;
+    text-align: center;
+}
+
+/* Animación de rotación */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.container {
+    /* background-color: red; */
+    position: relative;
+    right: 300px;
+    top: 282px;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+}
+.text {
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: yellow; /* Color amarillo */
+    text-decoration: none;
+}
+.bobber {
+    animation: orbit 5s linear infinite;
+    transform-origin: 150px center;
+    animation-delay: -0s; /* Inicia de inmediato */
+}
+.yamaha {
+    animation: orbit 5s linear infinite;
+    transform-origin: 150px center;
+    animation-delay: -1s; /* Retardo negativo para ya estar en movimiento */
+}
+.scooter {
+    animation: orbit 5s linear infinite;
+    transform-origin: 150px center;
+    animation-delay: -2s; /* Otro retardo negativo */
+}
+.street {
+    animation: orbit 5s linear infinite;
+    transform-origin: 150px center;
+    animation-delay: -3s; /* Otro retardo negativo */
+}
+.honda {
+    animation: orbit 5s linear infinite;
+    transform-origin: 150px center;
+    animation-delay: -4s; /* Otro retardo negativo */
+}
+@keyframes orbit {
+    0% {
+        transform: rotate(0deg) translate(170px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translate(170px) rotate(-360deg);
+    }
+}
+
+/* rueda de opciones */
+
+.rueda {
+    /**/
+    width: 250px;
+    height: 270px;
+    position: relative;
+    top: -80px;
+    right: 64px;
+}
+
+.wheel {
+    width: 100%;
+    height: auto;
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* banners */
+
+.banners{
+    /**/
+    width: 350px;
+    /* border: 3px red solid; */
+    padding: 30px;
+    position: relative;
+    left: 580px;
+    top: -190px;
+}
+.banner-1 img{
+    width: 350px;
+    border-radius: 30px;
+    position: relative;
+    left: -35px;
+    top: 30px;
+}
+.banner-1{
+    border: 3px gray solid;
+    border-radius: 30px;
+    width: 350px;    
+    position: relative;
+    top: -30px;
+}
+.banner-2 img{
+    width: 350px;
+    border-radius: 30px;
+    position: relative;
+    left: -35px;
+    top: 30px;
+    /* box-shadow: 25px -25px 45px red; */
+}
+.banner-2{
+    border: 3px gray solid;
+    border-radius: 30px;
+    width: 350px;    
+    position: relative;
+    top: 30px;
+}
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+} 
+.triangulo {
+    animation: spin 5s infinite linear; /* El elemento gira continuamente cada 2 segundos */
+    width: 190px;
+    z-index: 10;
+}
+.formas{
+    /* border: 3px red solid; */
+    margin-top: 50px;
+}
+.t-1{
+    position: relative;
+    z-index: 0;
+    margin-left: 113px;
+    margin-right: 140px;
+}
+.t-2{
+    margin-top: 180px;
+    margin-left: 113px;
+    margin-right: 140px;
+}
+.banner-3 {
+    position: absolute; /* Lo sacamos del flujo normal del documento */
+    z-index: 20; /* Más alto que el z-index de los triángulos (z-index: 10) */
+    background-color: #545454; /* Solo para visualización */
+    width: 250px;
+    padding: 20px;
+    height: 350px;
+    border-radius: 20px;
+    top: 435%;
+    left: 50%; /* Centrarlo horizontalmente */
+    transform: translateX(-50%); /* Ajuste para centrar con respecto al ancho de la página */
+}
+.n2{
+    position: absolute;
+    left: 300px;
+}
+.n3{
+    position: absolute;
+    left: 1040px;
+}
+.img-banner{
+    width: 250px;
+    border-radius: 30px;
+}
+.service{
+    text-align: center;
+    color: white;
+}
+
+.form-1{
+    width: 400px;
+    height: 450px;
+    border: 5px white solid;
+    border-radius: 50px;
+    position: relative;
+    top: 40px;
+    right: 210px;
+    float: right;
+}
+.h2-form{
+    position: relative;
+    top: 30px;
+    color: white;
+}
+div hr{
+    position: relative;
+    top: 30px;
+}
+div textarea{
+    position: absolute;
+    top: 80px;
+    width: 98.5%;
+    height: 290px;
+    background-color: #231f32;
+    color: white;
+    font-size: 20px;
+    border: none;
+}
+div.form-1 input{
+    position: absolute;
+    top: 380px;
+    left: 310px;
+}
+
+.service-2{
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 500px;
+    margin: auto;
+    /* border: 3px red solid; */
+    width: 500px;
+}
+
+.service-3{
+    width: 350px;
+    /* border: 3px red solid; */
+    border-radius: 30px;
+    background-color: #545454;
+    padding: 20px;
+    color: white;
+    display: inline-block;
+    position: relative;
+    margin-left: 30px;
+}
+.s3{
+    position: relative;
+    top: -40px;
+    height: 200px;
+}
+
+#service-content{
+    /* border: 3px yellow solid; */
+    position: relative;
+    top: 300px;
+    left: 10px;
+    display: inline-block;
+    height: 250px;
+    width: 1290px;
+}
+
+/* contactos */
+#contacto{
+    position: relative;
+    margin: 0;
+    top: 840px;
+    width: 100%;
+    height: 150px;
+    background-color: #373150;
+}
+.contacto{
+    width: 50px;
+    position: relative;
+    top: 75px;
+    left: -235px;
+    margin-left: 15px;
+}
+#contacto h2{
+    color: white;
+    position: relative;
+    left: 35px;
+}

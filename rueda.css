@@ -1,0 +1,97 @@
+body{
+    background-color: darkblue;
+}
+.container {
+    /* background-color: red; */
+    /**/
+    /* bottom: 130px; */
+    top: 250px;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+}
+.text {
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: yellow; /* Color amarillo */
+    text-decoration: none;
+}
+.bobber {
+    animation: orbit 5s linear infinite;
+    transform-origin: 150px center;
+    animation-delay: -0s; /* Inicia de inmediato */
+}
+.yamaha {
+    animation: orbit 5s linear infinite;
+    transform-origin: 150px center;
+    animation-delay: -1s; /* Retardo negativo para ya estar en movimiento */
+}
+.scooter {
+    animation: orbit 5s linear infinite;
+    transform-origin: 150px center;
+    animation-delay: -2s; /* Otro retardo negativo */
+}
+.street {
+    animation: orbit 5s linear infinite;
+    transform-origin: 150px center;
+    animation-delay: -3s; /* Otro retardo negativo */
+}
+.honda {
+    animation: orbit 5s linear infinite;
+    transform-origin: 150px center;
+    animation-delay: -4s; /* Otro retardo negativo */
+}
+@keyframes orbit {
+    0% {
+        transform: rotate(0deg) translate(170px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translate(170px) rotate(-360deg);
+    }
+}
+
+.rueda {
+    /**/
+    width: 250px;
+    height: 270px;
+    top: -80px;
+    right: 64px;
+}
+
+.wheel {
+    width: 100%;
+    height: auto;
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.circulo {
+    width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 10px solid;
+      border-image: conic-gradient(cyan, blue) 1;
+      background: none;
+      animation: girar 3s linear infinite;
+  }
+
+  @keyframes girar {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
